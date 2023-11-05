@@ -1,0 +1,73 @@
+/* Updated NavigationBar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00337c;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.brand {
+  font-size: 24px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.cart button {
+  background-color: #fff;
+  color: #121212;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .menu.show-mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: #00337c;
+    position: absolute;
+    top: 42px;
+    width: 200px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .menu.show-mobile li {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 18px; /* Slightly larger font size */
+  }
+
+  .menu.show-mobile li:hover {
+    background-color: #002865; /* Darker background on hover */
+    border-radius: 5px; /* Slight border radius on hover for a button-like effect */
+  }
+
+  .navbar .drawer-button {
+    display: block;
+    font-size: 24px;
+  }
+}

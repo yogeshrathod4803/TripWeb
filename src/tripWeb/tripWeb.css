@@ -1,0 +1,11 @@
+.content-container {
+  display: flex;
+  align-items: flex-start;
+  top: 500px !important;
+  position: relative;
+
+  /* Styles for larger screens (desktop) */
+  @media (min-width: 768px) {
+    justify-content: space-between;
+  }
+}
